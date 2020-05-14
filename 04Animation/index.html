@@ -22,8 +22,8 @@
         depth="1" 
         material="src: #wood"
         shadow 
-          animation= "property: rotation; to: 0 360 0; loop: true; dur: 10000"
-          animation__2="property: position; to: 1 2 -10; dur: 2000; easing: linear; loop: true"
+          animation= "property: rotation; to: 0 360 1; loop: true; dur: 10000"
+          animation__2="property: position; to: 1 1 -10; dur: 2000; easing: linear; loop: true"
           animation__color="property: material.color" >
       </a-box>
       <a-box id="myOtherBox" 
@@ -33,7 +33,8 @@
         height="1" 
         depth="1" 
         material="src: #wood2"
-        shadow>  
+        shadow
+        animation= "property: rotation; to: 0 360 1; loop: true; dur: 10000">  
       </a-box>
       <a-plane id="ground"
         position="0 0 -4" 
