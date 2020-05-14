@@ -22,14 +22,8 @@
         depth="1" 
         material="src: #wood"
         shadow 
-          animation= "property: rotation; to: 0 360 0; loop: true; dur: 9000"
-          animation__2="property: position; 
-          to: 10 1 -10; 
-          dur: 3000; 
-          easing: linear; 
-          loop: true;
-          delay: 50;
-          elasticity: 400" >
+animation__mouseenter="property: components.material.material.color; type: color; to: blue; startEvents: mouseenter; dur: 500";
+  animation__mouseleave="property: components.material.material.color; type: color; to: red; startEvents: mouseleave; dur: 500"; >
 
       </a-box>
       <a-box id="myOtherBox" 
